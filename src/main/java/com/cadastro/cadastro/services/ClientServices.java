@@ -60,6 +60,12 @@ public class ClientServices {
         if(client.getComments() != ""){
             currentClient.setComments(client.getComments());
         } 
+        if(client.getConsultant() != ""){
+            currentClient.setConsultant(client.getConsultant());
+        }
+        if(client.getSituation() != ""){
+            currentClient.setSituation(client.getSituation());
+        }
     }
 
     public void deleteClient(Long id) {

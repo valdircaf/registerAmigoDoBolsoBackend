@@ -20,6 +20,8 @@ public class Client implements Serializable{
     private String name;
     private String number;
     private String comments;
+    private String consultant;
+    private String situation;
     private String date;
 
     @ManyToOne
@@ -29,11 +31,13 @@ public class Client implements Serializable{
      public Client() {
     }
     
-    public Client(String company, String name, String number, String comments) {
+    public Client(String company, String name, String number, String comments, String consultant, String situation) {
         this.company = company;
         this.name = name;
         this.number = number;
         this.comments = comments;
+        this.consultant = consultant;
+        this.situation = situation;
     }
 
     public Long getId() {
@@ -81,5 +85,21 @@ public class Client implements Serializable{
 
     public void setDate(String date) {
         this.date = date;
-    }   
+    }
+
+    public String getConsultant() {
+        return consultant;
+    }
+
+    public void setConsultant(String consultant) {
+        this.consultant = consultant;
+    }
+
+    public String getSituation() {
+        return situation;
+    }
+
+    public void setSituation(String situation) {
+        this.situation = situation;
+    }
 }
