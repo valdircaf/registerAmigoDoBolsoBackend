@@ -21,6 +21,7 @@ public class Client implements Serializable{
     private String number;
     private String comments;
     private String consultant;
+    private String cnpj;
     private String situation;
     private String date;
 
@@ -31,13 +32,14 @@ public class Client implements Serializable{
      public Client() {
     }
     
-    public Client(String company, String name, String number, String comments, String consultant, String situation) {
+    public Client(String company, String name, String number, String comments, String consultant, String situation, String cnpj) {
         this.company = company;
         this.name = name;
         this.number = number;
         this.comments = comments;
         this.consultant = consultant;
         this.situation = situation;
+        this.cnpj = cnpj;
     }
 
     public Long getId() {
@@ -101,5 +103,13 @@ public class Client implements Serializable{
 
     public void setSituation(String situation) {
         this.situation = situation;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 }

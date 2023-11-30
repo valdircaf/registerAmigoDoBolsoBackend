@@ -66,6 +66,9 @@ public class ClientServices {
         if(client.getSituation() != ""){
             currentClient.setSituation(client.getSituation());
         }
+        if(client.getCnpj() != ""){
+            currentClient.setCnpj(client.getCnpj());
+        }
     }
 
     public void deleteClient(Long id) {
