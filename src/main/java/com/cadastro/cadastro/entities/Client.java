@@ -32,14 +32,14 @@ public class Client implements Serializable{
      public Client() {
     }
     
-    public Client(String company, String name, String number, String comments, String consultant, String situation, String cnpj) {
+    public Client(String company, String name, String number, String comments, String consultant, String cnpj, String situation) {
         this.company = company;
         this.name = name;
         this.number = number;
         this.comments = comments;
         this.consultant = consultant;
-        this.situation = situation;
         this.cnpj = cnpj;
+        this.situation = situation;
     }
 
     public Long getId() {
